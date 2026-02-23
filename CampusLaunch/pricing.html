@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Affordable Student Pricing | CampusLaunch Plans</title>
+  <meta name="description" content="CampusLaunch offers affordable pricing for university students. Start free or upgrade to Pro for advanced AI tools, analytics, and unlimited products.">
+  <link rel="canonical" href="https://campuslaunch.io/pricing.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Affordable Student Pricing CampusLaunch Plans">
+  <meta property="og:description" content="Start free or go Pro. Simple, affordable pricing designed for university student budgets.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://campuslaunch.io/pricing.html">
+  <meta property="og:image" content="https://campuslaunch.io/og-pricing.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "CampusLaunch Pricing",
+    "description": "Affordable pricing plans for university students launching online businesses with CampusLaunch.",
+    "url": "https://campuslaunch.io/pricing.html",
+    "mainEntity": {
+      "@type": "Product",
+      "name": "CampusLaunch Pro",
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Free Plan",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "name": "Pro Plan",
+          "price": "9",
+          "priceCurrency": "USD",
+          "billingIncrement": "month"
+        }
+      ]
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ═══════ NAVIGATION ═══════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <span class="logo-mark">CL</span>
+        CampusLaunch
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="use-cases.html">Use Cases</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="pricing.html" class="nav-cta">Start Free →</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════ PAGE HERO ═══════ -->
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb"><a href="index.html">Home</a> <span>/</span> Pricing</nav>
+      <div class="section-label">Pricing</div>
+      <h1>Affordable Student Pricing</h1>
+      <p class="section-desc mx-auto">Simple, transparent pricing designed for university budgets. Start building for free and upgrade to Pro when you're ready to scale your student business.</p>
+
+      <!-- Toggle -->
+      <div class="pricing-toggle">
+        <span id="labelMonthly" class="active">Monthly</span>
+        <div class="toggle-track" id="toggleTrack" onclick="togglePricing()"></div>
+        <span id="labelYearly">Yearly</span>
+        <span class="save-pill">Save 17%</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ PRICING CARDS ═══════ -->
+  <section class="section">
+    <div class="container">
+      <div class="pricing-grid stagger">
+        <!-- Free Plan -->
+        <div class="pricing-card">
+          <div class="pc-name">Free</div>
+          <div class="pc-desc">Perfect for getting started</div>
+          <div class="pc-price"><span class="currency">$</span>0</div>
+          <div class="pc-period">Free forever</div>
+          <ul class="pricing-features">
+            <li><span class="check">✓</span> Basic store builder</li>
+            <li><span class="check">✓</span> Up to 3 product listings</li>
+            <li><span class="check">✓</span> Email capture (100 contacts)</li>
+            <li><span class="check">✓</span> Standard analytics</li>
+            <li><span class="check">✓</span> Secure payment processing</li>
+            <li><span class="check">✓</span> Community support</li>
+          </ul>
+          <a href="#" class="pricing-btn btn-stroke">Start Free</a>
+        </div>
+
+        <!-- Pro Plan -->
+        <div class="pricing-card featured">
+          <div class="pc-name">Pro</div>
+          <div class="pc-desc">For serious student sellers</div>
+          <div class="pc-price"><span class="currency">$</span><span id="proPrice">9</span></div>
+          <div class="pc-period" id="proPeriod">per month</div>
+          <ul class="pricing-features">
+            <li><span class="check">✓</span> Everything in Free</li>
+            <li><span class="check">✓</span> Unlimited product listings</li>
+            <li><span class="check">✓</span> AI product descriptions</li>
+            <li><span class="check">✓</span> AI business optimisation</li>
+            <li><span class="check">✓</span> Advanced analytics dashboard</li>
+            <li><span class="check">✓</span> Custom domain support</li>
+            <li><span class="check">✓</span> Unlimited email contacts</li>
+            <li><span class="check">✓</span> Priority support</li>
+          </ul>
+          <a href="#" class="pricing-btn btn-fill">Start Pro Trial →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ PRICING DETAILS ═══════ -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="prose mx-auto reveal" style="text-align:center;">
+        <h2>Why Students Love Our Pricing</h2>
+        <p>We designed CampusLaunch to be the most affordable business platform for students. Our Free plan isn't a limited trial. It's a fully functional store builder that lets you list products, accept payments, and track analytics. Many students run successful businesses entirely on the Free plan.</p>
+
+        <p>The Pro plan is built for students who want to scale. For less than the cost of two coffees per month, you get access to <a href="features.html" class="inline-link">AI-powered business tools</a> that professional sellers pay hundreds for including AI-generated product descriptions, advanced analytics, custom domain support, and unlimited product listings.</p>
+
+        <p>Choosing the annual plan saves you 17%, bringing the monthly cost down to just $7.50. That investment typically pays for itself within the first week of increased sales, thanks to AI-optimised product copy and advanced insights.</p>
+
+        <p>Not sure which plan is right for you? Start with Free, explore our <a href="features.html" class="inline-link">full feature list</a>, and upgrade when you're ready. There's no commitment and no credit card required to begin.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ FAQ ═══════ -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center reveal">
+        <div class="section-label">FAQ</div>
+        <h2>Common Questions</h2>
+      </div>
+      <div class="card-grid cols-2 stagger" style="max-width:800px;margin:40px auto 0;">
+        <div class="feature-card">
+          <h3>Can I really start for free?</h3>
+          <p>Yes. The Free plan includes a working store, payment processing, and basic analytics. No credit card required, no hidden fees, no expiry date.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Can I upgrade or downgrade anytime?</h3>
+          <p>Absolutely. Switch between plans whenever you want. If you downgrade from Pro, you keep access until the end of your billing period.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Is there a student discount?</h3>
+          <p>Our pricing is already designed for student budgets. At $9/month (or $7.50 with annual billing), Pro is among the most affordable business platforms available.</p>
+        </div>
+        <div class="feature-card">
+          <h3>What payment methods do you accept?</h3>
+          <p>We accept all major credit and debit cards, Apple Pay, and Google Pay. All transactions are processed securely with bank-grade encryption.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ CTA ═══════ -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <h2>Launch Your Business Today</h2>
+        <p>Join 2,400+ students earning on CampusLaunch. Your first store is free.</p>
+        <a href="#" class="btn btn-white">Create My Free Store →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="fb-name"><span class="logo-mark">CL</span> CampusLaunch</div>
+          <p>The AI-powered platform helping university students turn their skills into income. Built by students, for students.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="use-cases.html">Use Cases</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Help Centre</a></li>
+            <li><a href="#">Student Guides</a></li>
+            <li><a href="#">API Docs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 CampusLaunch. All rights reserved.</span>
+        <span>AR</span>
+      </div>
+    </div>
+  </footer>
+
+  <script defer src="js/main.js"></script>
+</body>
+</html>

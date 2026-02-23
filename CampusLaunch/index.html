@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CampusLaunch | AI Business Platform for University Students</title>
+  <meta name="description" content="CampusLaunch is an AI-powered platform helping university students start online businesses, sell digital products, and build profitable side hustles from campus.">
+  <link rel="canonical" href="https://campuslaunch.io/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="CampusLaunch — Launch Your Student Business with AI">
+  <meta property="og:description" content="The AI-powered platform for university students to start online businesses, sell digital products, and earn from campus.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://campuslaunch.io/">
+  <meta property="og:image" content="https://campuslaunch.io/og-image.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "CampusLaunch",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "description": "AI-powered micro-business platform for university students to start, manage, and grow online businesses.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ═══════ NAVIGATION ═══════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <span class="logo-mark">CL</span>
+        CampusLaunch
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="use-cases.html">Use Cases</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="pricing.html" class="nav-cta">Start Free →</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════ HERO ═══════ -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span> Built for student entrepreneurs
+          </div>
+          <h1>Launch Your Student Business <span class="accent">with AI</span></h1>
+          <p class="hero-text">Start selling digital products, tutoring services, or online notes using CampusLaunch. The AI-powered student entrepreneur platform built for university life.</p>
+          <div class="hero-actions">
+            <a href="pricing.html" class="btn btn-primary">Get Started Free →</a>
+            <a href="how-it-works.html" class="btn btn-outline">See How It Works</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <div class="number" data-count="2400" data-suffix="+">0</div>
+              <div class="label">Student Sellers</div>
+            </div>
+            <div class="hero-stat">
+              <div class="number" data-count="380" data-prefix="$" data-suffix="K">$0</div>
+              <div class="label">Earned This Year</div>
+            </div>
+            <div class="hero-stat">
+              <div class="number" data-count="120" data-suffix="+">0</div>
+              <div class="label">Universities</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80"
+              alt="University student building online business on laptop"
+              width="800" height="533"
+              loading="eager"
+            >
+            <div class="hero-float-badge">
+              <div class="hfb-text">
+                <strong>+47% this month</strong>
+                <span>Store revenue growing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ INTRO + IDEA GENERATOR ═══════ -->
+  <section class="section section-alt dot-bg">
+    <div class="container text-center">
+      <div class="reveal">
+        <div class="section-label">AI-Powered Tools</div>
+        <h2>Your Business Idea Starts Here</h2>
+        <p class="section-desc mx-auto" style="margin-bottom:0;">Not sure how to make money as a university student? CampusLaunch uses artificial intelligence to match your skills and academic background with profitable business opportunities. Whether you want to <a href="use-cases.html" class="inline-link">sell notes online</a>, offer tutoring, or launch a digital product store, our platform handles the heavy lifting so you can focus on what matters most, your studies and your growth.</p>
+      </div>
+
+      <div class="generator-widget reveal">
+        <h3>AI Business Idea Generator</h3>
+        <p>Click below to instantly discover a student business idea tailored to campus life.</p>
+        <button class="gen-btn" onclick="generateIdea()">
+          Generate Idea
+        </button>
+        <div class="idea-output" id="ideaOutput"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ FEATURES PREVIEW ═══════ -->
+  <section class="section">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label">Platform Highlights</div>
+        <h2>Why Students Choose CampusLaunch</h2>
+        <p class="section-desc">Everything you need to start, manage, and grow an online business as a university student. All in one place. Explore our full <a href="features.html" class="inline-link">AI student business tools</a> to see what's possible.</p>
+      </div>
+      <div class="card-grid cols-3 stagger">
+        <div class="feature-card">
+          <h3>Instant Store Builder</h3>
+          <p>Create a professional online store in minutes without writing a single line of code. Choose a template, add your products, and launch.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Advanced Analytics</h3>
+          <p>Track revenue, customer behaviour, and growth metrics with dashboards designed for clarity and insight.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Built for Students</h3>
+          <p>Designed around campus life,flexible scheduling, student-friendly pricing, and tools that fit between lectures.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ SOCIAL PROOF STRIP ═══════ -->
+  <section class="section section-alt">
+    <div class="container text-center">
+      <div class="reveal">
+        <div class="section-label">Success Stories</div>
+        <h2>Students Already Earning</h2>
+        <p class="section-desc mx-auto">Thousands of university students are already using CampusLaunch to build profitable side hustles. Read their <a href="use-cases.html" class="inline-link">real-world use cases</a> or browse <a href="pricing.html" class="inline-link">affordable pricing plans</a> to get started.</p>
+      </div>
+      <div class="card-grid cols-2 stagger" style="max-width:800px;margin:48px auto 0;">
+        <div class="story-card">
+          <div class="story-quote">"I started selling my engineering revision notes and hit $1,000/month within two months. CampusLaunch made the whole process streamlined process."</div>
+          <div class="story-meta">
+            <div class="story-avatar av-cyan">JR</div>
+            <div class="story-info">
+              <strong>James R.</strong>
+              <span>3rd Year Engineering · UCL</span>
+            </div>
+          </div>
+          <div class="story-result">↑ $1,000/mo recurring</div>
+        </div>
+        <div class="story-card">
+          <div class="story-quote">"The AI product descriptions doubled my conversion rate on marketing templates. I went from a few sales a week to daily orders."</div>
+          <div class="story-meta">
+            <div class="story-avatar av-purple">SP</div>
+            <div class="story-info">
+              <strong>Sofia P.</strong>
+              <span>Business Major · Manchester</span>
+            </div>
+          </div>
+          <div class="story-result">↑ 2x conversion rate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ EMAIL CAPTURE SECTION ═══════ -->
+<section class="section">
+  <div class="container">
+    <div class="cta-banner reveal">
+      <h2>Get Free Student Business Ideas Weekly</h2>
+      <p>
+        Join the CampusLaunch early access list to receive curated student business ideas,
+        monetisation strategies, and exclusive platform updates.
+      </p>
+
+      <a 
+        href="https://forms.gle/98wyfQ5CXKZc43GC8" 
+        target="_blank" 
+        class="btn btn-white"
+      >
+        Join Early Access →
+      </a>
+
+      <p class="email-note">
+        No spam. Unsubscribe anytime.
+      </p>
+    </div>
+  </div>
+</section>
+
+  <!-- ═══════ BOTTOM CTA ═══════
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <h2>Ready to Start Your Student Business?</h2>
+        <p>Join 2,400+ university students already building, selling, and earning on CampusLaunch.</p>
+        <a href="pricing.html" class="btn btn-white">Get Started Free →</a>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="fb-name"><span class="logo-mark">CL</span> CampusLaunch</div>
+          <p>The AI-powered platform helping university students turn their skills into income. Built by students, for students.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="use-cases.html">Use Cases</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Help Centre</a></li>
+            <li><a href="#">Student Guides</a></li>
+            <li><a href="#">API Docs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 CampusLaunch. All rights reserved.</span>
+        <span>AR</span>
+      </div>
+    </div>
+  </footer>
+
+  <script defer src="js/main.js"></script>
+</body>
+</html>
