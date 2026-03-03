@@ -66,7 +66,10 @@
         <li><a href="how-it-works.html">How It Works</a></li>
         <li><a href="use-cases.html">Use Cases</a></li>
         <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="index.html#googleForm" class="nav-cta">Join Us →</a></li>
+        <li><a href="index.html#googleForm" class="nav-cta" onclick="gtag('event', 'cta_click', {
+          'event_category': 'CTA',
+          'event_label': 'Navigation Join Us'
+        });"> >Join Us →</a></li>
       </ul>
       <div class="hamburger" id="hamburger" onclick="toggleNav()">
         <span></span><span></span><span></span>
@@ -85,7 +88,10 @@
           <h1>Launch Your Student Business <span class="accent">with AI</span></h1>
           <p class="hero-text">Start selling digital products, tutoring services, or online notes using CampusLaunch. The AI-powered student entrepreneur platform built for university life.</p>
           <div class="hero-actions">
-            <a href="pricing.html" class="btn btn-primary">Get Started Free →</a>
+            <a href="index.html#googleForm" class="btn btn-primary" onclick="gtag('event', 'cta_click', {
+              'event_category': 'CTA',
+              'event_label': 'Hero Get Started Free'
+            });">Get Started Free →</a>
             <a href="how-it-works.html" class="btn btn-outline">See How It Works</a>
           </div>
           <div class="hero-stats">
@@ -135,7 +141,11 @@
       <div class="generator-widget reveal">
         <h3>AI Business Idea Generator</h3>
         <p>Click below to instantly discover a student business idea tailored to campus life.</p>
-        <button class="gen-btn" onclick="generateIdea()">
+        <button class="gen-btn"
+        onclick="generateIdea(); gtag('event', 'engagement', {
+          'event_category': 'Interaction',
+          'event_label': 'AI Idea Generator Click'
+        });">
           Generate Idea
         </button>
         <div class="idea-output" id="ideaOutput"></div>
@@ -222,6 +232,10 @@
       <p>Want to access the form directly? <a 
         href="https://forms.gle/98wyfQ5CXKZc43GC8" 
         class="btn-link"
+        onclick="gtag('event', 'lead_click', {
+          'event_category': 'Lead',
+          'event_label': 'Google Form Direct Click'
+        });"
         >Click here </a> </p>
     </div>
   </div>

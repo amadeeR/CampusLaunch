@@ -79,8 +79,16 @@
         <li><a href="how-it-works.html">How It Works</a></li>
         <li><a href="use-cases.html">Use Cases</a></li>
         <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="index.html#googleForm" class="nav-cta">Join Us →</a></li>
-      </ul>
+        <li>
+          <a href="index.html#googleForm"
+             class="nav-cta"
+             onclick="gtag('event', 'cta_click', {
+               'event_category': 'CTA',
+               'event_label': 'Pricing Navigation Join Us'
+             });">
+             Join Us →
+          </a>
+        </li>      </ul>
 
       <div class="hamburger" id="hamburger" onclick="toggleNav()">
         <span></span><span></span><span></span>
@@ -124,8 +132,14 @@
             <li><span class="check">✓</span> Secure payment processing</li>
             <li><span class="check">✓</span> Community support</li>
           </ul>
-          <a href="index.html#googleForm" class="pricing-btn btn-stroke">Join Us</a>
-        </div>
+          <a href="index.html#googleForm"
+          class="pricing-btn btn-stroke"
+          onclick="gtag('event', 'cta_click', {
+            'event_category': 'CTA',
+            'event_label': 'Pricing Free Plan Join Us'
+          });">
+          Join Us
+       </a>        </div>
 
         <!-- Pro Plan -->
         <div class="pricing-card featured">
@@ -143,8 +157,14 @@
             <li><span class="check">✓</span> Unlimited email contacts</li>
             <li><span class="check">✓</span> Priority support</li>
           </ul>
-        <a href="index.html#googleForm" class="pricing-btn btn-fill">Start Pro Trial →</a>        </div>
-      </div>
+          <a href="index.html#googleForm"
+          class="pricing-btn btn-fill"
+          onclick="gtag('event', 'cta_click', {
+            'event_category': 'CTA',
+            'event_label': 'Pricing Pro Start Trial'
+          });">
+          Start Pro Trial →
+       </a>      </div>
     </div>
   </section>
 
@@ -198,8 +218,14 @@
       <div class="cta-banner reveal">
         <h2>Launch Your Business Today</h2>
         <p>Join 2,400+ students earning on CampusLaunch. Your first store is free.</p>
-        <a href="#" class="btn btn-white">Create My Free Store →</a>
-      </div>
+        <a href="index.html#googleForm"
+        class="btn btn-white"
+        onclick="gtag('event', 'cta_click', {
+          'event_category': 'CTA',
+          'event_label': 'Pricing Bottom Create Free Store'
+        });">
+        Create My Free Store →
+     </a>      </div>
     </div>
   </section>
 

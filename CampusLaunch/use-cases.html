@@ -60,8 +60,16 @@
         <li><a href="how-it-works.html">How It Works</a></li>
         <li><a href="use-cases.html">Use Cases</a></li>
         <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="index.html#googleForm" class="nav-cta">Join Us →</a></li>
-      </ul>
+        <li>
+          <a href="index.html#googleForm"
+             class="nav-cta"
+             onclick="gtag('event', 'cta_click', {
+               'event_category': 'CTA',
+               'event_label': 'UseCases Navigation Join Us'
+             });">
+             Join Us →
+          </a>
+        </li>      </ul>
       <div class="hamburger" id="hamburger" onclick="toggleNav()">
         <span></span><span></span><span></span>
       </div>
@@ -177,8 +185,14 @@
       <div class="cta-banner reveal">
         <h2>Turn Your Knowledge Into Income</h2>
         <p>Join thousands of students already earning with CampusLaunch. Start free today.</p>
-        <a href="pricing.html" class="btn btn-white">View Pricing Plans →</a>
-      </div>
+        <a href="pricing.html"
+        class="btn btn-white"
+        onclick="gtag('event', 'cta_click', {
+          'event_category': 'CTA',
+          'event_label': 'UseCases View Pricing'
+        });">
+        View Pricing Plans →
+     </a>      </div>
     </div>
   </section>
 

@@ -163,7 +163,14 @@
       <div class="cta-banner reveal">
         <h2>Start Your Journey Today</h2>
         <p>It takes less than 15 minutes to go from idea to live store. Begin with our free plan.</p>
-        <a href="pricing.html" class="btn btn-white">See Pricing →</a>
+        <a href="pricing.html"
+   class="btn btn-white"
+   onclick="gtag('event', 'cta_click', {
+     'event_category': 'CTA',
+     'event_label': 'HowItWorks See Pricing'
+   });">
+   See Pricing →
+</a>
       </div>
     </div>
   </section>
