@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://campuslaunch.io/sitemap.xml
+Sitemap: https://campuslaunch.vercel.app/sitemap.xml
