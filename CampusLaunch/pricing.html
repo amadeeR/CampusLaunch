@@ -5,7 +5,8 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KJG0RZD0YB"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag(){
+    dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-KJG0RZD0YB');
@@ -29,7 +30,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <!-- Styles -->
   <link rel="stylesheet" href="css/main.css">
 
@@ -66,6 +67,9 @@
 
 <body>
 
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
   <!-- ═══════ NAVIGATION ═══════ -->
   <nav class="navbar" id="navbar">
     <div class="nav-inner">
@@ -75,20 +79,21 @@
       </a>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
-        <li><a href="features.html">Features</a></li>
         <li><a href="how-it-works.html">How It Works</a></li>
-        <li><a href="use-cases.html">Use Cases</a></li>
+        <li><a href="features.html">Features</a></li>
         <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
         <li>
-          <a href="index.html#googleForm"
+          <a href="contact.html"
              class="nav-cta"
              onclick="gtag('event', 'cta_click', {
                'event_category': 'CTA',
                'event_label': 'Pricing Navigation Join Us'
              });">
-             Join Us →
+             Join Us
           </a>
-        </li>      </ul>
+        </li>
+      </ul>
 
       <div class="hamburger" id="hamburger" onclick="toggleNav()">
         <span></span><span></span><span></span>
@@ -132,14 +137,15 @@
             <li><span class="check">✓</span> Secure payment integration</li>
             <li><span class="check">✓</span> Community support</li>
           </ul>
-          <a href="index.html#googleForm"
-          class="pricing-btn btn-stroke"
-          onclick="gtag('event', 'cta_click', {
-            'event_category': 'CTA',
-            'event_label': 'Pricing Free Plan Join Us'
-          });">
-          Join Us
-       </a>        </div>
+          <a href="contact.html"
+             class="pricing-btn btn-stroke"
+             onclick="gtag('event', 'cta_click', {
+               'event_category': 'CTA',
+               'event_label': 'Pricing Free Plan Join Us'
+             });">
+            Join Us
+          </a>
+        </div>
 
         <!-- Pro Plan -->
         <div class="pricing-card featured">
@@ -157,14 +163,16 @@
             <li><span class="check">✓</span> Custom domain support</li>
             <li><span class="check">✓</span> Priority support</li>
           </ul>
-          <a href="index.html#googleForm"
-          class="pricing-btn btn-fill"
-          onclick="gtag('event', 'cta_click', {
-            'event_category': 'CTA',
-            'event_label': 'Pricing Pro Start Trial'
-          });">
-          Start Pro Trial →
-       </a>      </div>
+          <a href="contact.html"
+             class="pricing-btn btn-fill"
+             onclick="gtag('event', 'cta_click', {
+               'event_category': 'CTA',
+               'event_label': 'Pricing Pro Start Trial'
+             });">
+            Start Pro Trial
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -173,11 +181,11 @@
     <div class="container">
       <div class="prose mx-auto reveal" style="text-align:center;">
         <h2>Built for Students Who Want to Launch Fast</h2>
-        <p>CampusLaunch is the only store builder where AI generates your complete store before you touch a single setting. That means no blank templates, no writing copy from scratch, and no hours spent on design. Both the Free and Pro plans include AI store generation   so you can go from idea to live store in minutes regardless of which plan you're on.</p>
+        <p>CampusLaunch is the only store builder where AI generates your complete store before you touch a single setting. That means no blank templates, no writing copy from scratch, and no hours spent on design. Both the Free and Pro plans include AI store generation, so you can go from idea to live store in minutes regardless of which plan you are on.</p>
 
-        <p>The Pro plan unlocks unlimited AI store builds, AI-generated product imagery, and advanced AI content tools that would normally cost hundreds of dollars on other platforms. At under $9/month, it's the most affordable way to access professional-grade AI store building as a student entrepreneur.</p>
+        <p>The Pro plan unlocks unlimited AI store builds, AI-generated product imagery, and advanced AI content tools that would normally cost hundreds of dollars on other platforms. At under $9 per month, it is the most affordable way to access professional-grade AI store building as a student entrepreneur.</p>
 
-        <p>Not sure which plan is right for you? Start with Free, experience how AI generates your store, and upgrade when you're ready. No commitment and no credit card required to begin. Explore the <a href="features.html" class="inline-link">full feature list</a> to see everything included.</p>
+        <p>Not sure which plan is right for you? Start with Free, experience how AI generates your store, and upgrade when you are ready. No commitment and no credit card required to begin. Explore the <a href="features.html" class="inline-link">full feature list</a> to see everything included.</p>
       </div>
     </div>
   </section>
@@ -192,7 +200,7 @@
       <div class="card-grid cols-2 stagger" style="max-width:800px;margin:40px auto 0;">
         <div class="feature-card">
           <h3>How does the AI store builder work?</h3>
-          <p>You type a short description of your business   like "a handmade jewellery store for university students"   and AI generates your complete online store. Homepage, product sections, branding, content, and images are all created automatically. You can then customise anything with the drag-and-drop editor.</p>
+          <p>You type a short description of your business, like "a handmade jewellery store for university students", and AI generates your complete online store. Homepage, product sections, branding, content, and images are all created automatically. You can then customise anything with the drag-and-drop editor.</p>
         </div>
         <div class="feature-card">
           <h3>Can I upgrade or downgrade anytime?</h3>
@@ -216,14 +224,15 @@
       <div class="cta-banner reveal">
         <h2>Launch Your Business Today</h2>
         <p>Join 2,400+ students earning on CampusLaunch. Your first store is free.</p>
-        <a href="index.html#googleForm"
-        class="btn btn-white"
-        onclick="gtag('event', 'cta_click', {
-          'event_category': 'CTA',
-          'event_label': 'Pricing Bottom Create Free Store'
-        });">
-        Create My Free Store →
-     </a>      </div>
+        <a href="contact.html"
+           class="btn btn-white"
+           onclick="gtag('event', 'cta_click', {
+             'event_category': 'CTA',
+             'event_label': 'Pricing Bottom Create Free Store'
+           });">
+          Create My Free Store
+        </a>
+      </div>
     </div>
   </section>
 
@@ -239,26 +248,26 @@
           <ul>
             <li><a href="features.html">Features</a></li>
             <li><a href="how-it-works.html">How It Works</a></li>
-            <li><a href="use-cases.html">Use Cases</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li><a href="pricing.html">Pricing</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <ul>
             <li><a href="index.html">About Us</a></li>
-            <li><a href="index.html#googleForm">Join CampusLaunch</a></li>
+            <li><a href="contact.html">Join CampusLaunch</a></li>
             <li><a href="pricing.html#faq">FAQ</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <ul>
-            <li><a href="how-it-works.html#different">Why we are different?</a></li>
+            <li><a href="how-it-works.html#different">Why We Are Different</a></li>
             <li><a href="index.html#stories">Success Stories</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2026 CampusLaunch. All rights reserved.</span>
+        <span>2026 CampusLaunch. All rights reserved.</span>
       </div>
     </div>
   </footer>
