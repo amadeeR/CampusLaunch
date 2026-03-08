@@ -1,272 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KJG0RZD0YB"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){
-    dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-KJG0RZD0YB');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-KJG0RZD0YB');
 </script>
 
-  <meta charset="UTF-8">
-  <meta name="robots" content="index, follow">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Affordable Student Pricing | CampusLaunch Plans</title>
-  <meta name="description" content="CampusLaunch offers affordable pricing for university students. Start free or upgrade to Pro for advanced AI tools, analytics, and unlimited products.">
-  <link rel="canonical" href="https://campuslaunch.vercel.app/pricing">
+<title>Affordable Student Pricing | CampusLaunch Plans</title>
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Affordable Student Pricing CampusLaunch Plans">
-  <meta property="og:description" content="Start free or go Pro. Simple, affordable pricing designed for university student budgets.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://campuslaunch.vercel.app/pricing">
-  <meta property="og:image" content="https://campuslaunch.vercel.app/og-pricing.jpg">
+<meta name="description" content="CampusLaunch offers affordable pricing for university creators. Start with a basic plan or upgrade for advanced AI ecommerce tools, analytics and unlimited products.">
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <!-- Styles -->
-  <link rel="stylesheet" href="css/main.css">
+<link rel="canonical" href="https://campuslaunch.vercel.app/pricing">
 
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "CampusLaunch Pricing",
-    "description": "Affordable pricing plans for university students launching online businesses with CampusLaunch.",
-    "url": "https://campuslaunch.vercel.app/pricing",
-    "mainEntity": {
-      "@type": "Product",
-      "name": "CampusLaunch Pro",
-      "offers": [
-        {
-          "@type": "Offer",
-          "name": "Free Plan",
-          "price": "0",
-          "priceCurrency": "USD"
-        },
-        {
-          "@type": "Offer",
-          "name": "Pro Plan",
-          "price": "9",
-          "priceCurrency": "USD",
-          "billingIncrement": "month"
-        }
-      ]
-    }
-  }
-  </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/main.css">
+
 </head>
 
 <body>
 
-  <!-- Scroll Progress Bar -->
-  <div class="scroll-progress" id="scrollProgress"></div>
+<div class="scroll-progress" id="scrollProgress"></div>
 
-  <!-- ═══════ NAVIGATION ═══════ -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-inner">
-      <a href="/" class="nav-brand">
-        <span class="logo-mark">CL</span>
-        CampusLaunch
-      </a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="/">Home</a></li>
-        <li><a href="/how-it-works">How It Works</a></li>
-        <li><a href="/features">Features</a></li>
-        <li><a href="/pricing">Pricing</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li>
-          <a href="/contact"
-             class="nav-cta"
-             onclick="gtag('event', 'cta_click', {
-               'event_category': 'CTA',
-               'event_label': 'Pricing Navigation Join Us'
-             });">
-             Join Us
-          </a>
-        </li>
-      </ul>
+<nav class="navbar" id="navbar">
+<div class="nav-inner">
 
-      <div class="hamburger" id="hamburger" onclick="toggleNav()">
-        <span></span><span></span><span></span>
-      </div>
-    </div>
-  </nav>
+<a href="/" class="nav-brand">
+<span class="logo-mark">CL</span>
+CampusLaunch
+</a>
 
-  <!-- ═══════ PAGE HERO ═══════ -->
-  <section class="page-hero">
-    <div class="container">
-      <nav class="breadcrumb"><a href="/">Home</a> <span>/</span> Pricing</nav>
-      <div class="section-label">Pricing</div>
-      <h1>Affordable Student Prices</h1>
-      <p class="section-desc mx-auto">Simple, transparent prices designed for student budgets. Start building your AI-generated store for free and upgrade to Pro when you're ready to unlock advanced AI tools and scale your business.</p>
+<ul class="nav-links" id="navLinks">
+<li><a href="/">Home</a></li>
+<li><a href="/how-it-works">How It Works</a></li>
+<li><a href="/features">Features</a></li>
+<li><a href="/pricing">Pricing</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><a href="/contact" class="nav-cta">Join Us</a></li>
+</ul>
 
-      <!-- Toggle -->
-      <div class="pricing-toggle">
-        <span id="labelMonthly" class="active">Monthly</span>
-        <div class="toggle-track" id="toggleTrack" onclick="togglePricing()"></div>
-        <span id="labelYearly">Yearly</span>
-        <span class="save-pill">Save 17%</span>
-      </div>
-    </div>
-  </section>
+<div class="hamburger" id="hamburger" onclick="toggleNav()">
+<span></span><span></span><span></span>
+</div>
 
-  <!-- ═══════ PRICING CARDS ═══════ -->
-  <section class="section">
-    <div class="container">
-      <div class="pricing-grid stagger">
-        <!-- Free Plan -->
-        <div class="pricing-card">
-          <div class="pc-name">Free</div>
-          <div class="pc-desc">Perfect for getting started</div>
-          <div class="pc-price"><span class="currency">$</span>0</div>
-          <div class="pc-period">Free forever</div>
-          <ul class="pricing-features">
-            <li><span class="check"></span> Community support</li>
-          </ul>
-          <a href="/contact"
-             class="pricing-btn btn-stroke"
-             onclick="gtag('event', 'cta_click', {
-               'event_category': 'CTA',
-               'event_label': 'Pricing Free Plan Join Us'
-             });">
-            Join Us
-          </a>
-        </div>
+</div>
+</nav>
 
-        <!-- Pro Plan -->
-        <div class="pricing-card featured">
-          <div class="pc-name">Pro</div>
-          <div class="pc-desc">For serious student sellers</div>
-          <div class="pc-price"><span class="currency">$</span><span id="proPrice">9</span></div>
-          <div class="pc-period" id="proPeriod">per month</div>
-          <ul class="pricing-features">
-            <li><span class="check">✓</span> Everything in Free</li>
-            <li><span class="check">✓</span> Unlimited AI generation</li>
-            <li><span class="check">✓</span> AI image generation</li>
-            <li><span class="check">✓</span> AI product descriptions & copy</li>
-            <li><span class="check">✓</span> Unlimited product listings</li>
-            <li><span class="check">✓</span> Advanced analytics dashboard</li>
-            <li><span class="check">✓</span> Custom domain support</li>
-            <li><span class="check">✓</span> Priority support</li>
-          </ul>
-          <a href="/contact"
-             class="pricing-btn btn-fill"
-             onclick="gtag('event', 'cta_click', {
-               'event_category': 'CTA',
-               'event_label': 'Pricing Pro Start Trial'
-             });">
-            Start Pro Trial
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ═══════ PRICING DETAILS ═══════ -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="prose mx-auto reveal" style="text-align:center;">
-        <h2>Built for Students Who Want to Launch Fast</h2>
-        <p>CampusLaunch is the only AI builder where AI generates your complete online business before you touch a single setting. That means no blank templates, no writing copy from scratch, and no hours spent on design. Both the Free and Pro plans include AI store generation, so you can go from idea to live store in minutes regardless of which plan you are on.</p>
+<section class="page-hero">
+<div class="container">
 
-        <p>The Pro plan unlocks unlimited AI builds, AI-generated product imagery, and advanced AI content tools that would normally cost hundreds of dollars on other platforms. At under $9 per month, it is the most affordable way to access professional-grade AI building as a student entrepreneur.</p>
+<nav class="breadcrumb"><a href="/">Home</a> <span>/</span> Pricing</nav>
 
-        <p>Not sure which plan is right for you? Start with Free, experience how AI generates, and upgrade when you are ready. No commitment and no credit card required to begin. Explore the <a href="/features" class="inline-link">full feature list</a> to see everything included.</p>
-      </div>
-    </div>
-  </section>
+<div class="section-label">Pricing</div>
 
-  <!-- ═══════ FAQ ═══════ -->
-  <section class="section" id="faq">
-    <div class="container">
-      <div class="text-center reveal">
-        <div class="section-label">FAQ</div>
-        <h2>Common Questions</h2>
-      </div>
-      <div class="card-grid cols-2 stagger" style="max-width:800px;margin:40px auto 0;">
-        <div class="feature-card">
-          <h3>How does the AI store builder work?</h3>
-          <p>You type a short description of your business, and AI generates your complete online store. Homepage, product sections, branding, content, and images are all created automatically. You can then customise anything with the drag-and-drop editor.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Can I upgrade or downgrade anytime?</h3>
-          <p>Absolutely. Switch between plans whenever you want. If you downgrade from Pro, you keep access until the end of your billing period.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Is there a student discount?</h3>
-          <p>Our pricing is already designed for student budgets. At $9/month (or $7.50 with annual billing), Pro is among the most affordable business platforms available.</p>
-        </div>
-        <div class="feature-card">
-          <h3>What payment methods do you accept?</h3>
-          <p>We accept all major credit and debit cards, Apple Pay, and Google Pay. All transactions are processed securely with bank-grade encryption.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<h1>Affordable Creator Pricing</h1>
 
-  <!-- ═══════ CTA ═══════ -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="cta-banner reveal">
-        <h2>Launch Your Business Today</h2>
-        <p>Join 2,400+ students earning on CampusLaunch. Your first store is free.</p>
-        <a href="/contact"
-           class="btn btn-white"
-           onclick="gtag('event', 'cta_click', {
-             'event_category': 'CTA',
-             'event_label': 'Pricing Bottom Create Free Store'
-           });">
-          Create My Free Store
-        </a>
-      </div>
-    </div>
-  </section>
+<p class="section-desc mx-auto">
+Simple pricing designed for campus creators launching digital ventures with AI ecommerce tools.
+</p>
 
-  <!-- ═══════ FOOTER ═══════ -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div class="fb-name"><span class="logo-mark">CL</span> CampusLaunch</div>
-          <p>The AI-powered platform helping university students turn their skills into income. Built by students, for students.</p>
-        </div>
-        <div class="footer-col">
-          <ul>
-            <li><a href="/features">Features</a></li>
-            <li><a href="/how-it-works">How It Works</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/pricing">Pricing</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <ul>
-            <li><a href="/">About Us</a></li>
-            <li><a href="/contact">Join CampusLaunch</a></li>
-            <li><a href="/pricing#faq">FAQ</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <ul>
-            <li><a href="/how-it-works#different">Why We Are Different</a></li>
-            <li><a href="/#stories">Success Stories</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>2026 CampusLaunch. All rights reserved.</span>
-      </div>
-    </div>
-  </footer>
+</div>
+</section>
 
-  <script defer src="js/main.js"></script>
+
+<section class="section">
+<div class="container">
+
+<div class="pricing-grid stagger">
+
+<div class="pricing-card">
+
+<div class="pc-name">Starter</div>
+<div class="pc-desc">Great for getting started</div>
+<div class="pc-price"><span class="currency">$</span>0</div>
+<div class="pc-period">Basic access</div>
+
+<ul class="pricing-features">
+<li>Community support</li>
+</ul>
+
+<a href="/contact" class="pricing-btn btn-stroke">
+Join Us
+</a>
+
+</div>
+
+
+<div class="pricing-card featured">
+
+<div class="pc-name">Premium</div>
+<div class="pc-desc">For creators scaling faster</div>
+
+<div class="pc-price">
+<span class="currency">$</span><span id="proPrice">9</span>
+</div>
+
+<div class="pc-period">per month</div>
+
+<ul class="pricing-features">
+<li>Everything in starter</li>
+<li>Unlimited AI generation</li>
+<li>AI image creation</li>
+<li>AI product descriptions</li>
+<li>Unlimited listings</li>
+<li>Advanced analytics dashboard</li>
+<li>Custom domain support</li>
+<li>Priority support</li>
+</ul>
+
+<a href="/contact" class="pricing-btn btn-fill">
+Start Premium Trial
+</a>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<section class="section section-alt">
+<div class="container">
+
+<div class="prose mx-auto reveal" style="text-align:center;">
+
+<h2>Built for Creators Launching Digital Ventures</h2>
+
+<p>
+CampusLaunch is an AI ecommerce platform designed to help creators launch digital ventures faster. 
+Instead of spending hours building websites from scratch, users can generate a professional digital 
+storefront using artificial intelligence. The platform automatically produces layouts, product sections, 
+branding elements and marketing copy so creators can focus on validating ideas and reaching customers.
+</p>
+
+<p>
+AI-powered website builders are transforming how entrepreneurs start online projects. A modern ecommerce 
+builder can automatically generate product descriptions, landing page content, and design layouts within 
+seconds. These tools allow creators to experiment with new digital products and services without technical 
+knowledge or design experience.
+</p>
+
+<p>
+Whether you want to sell digital downloads, educational resources, templates or creative services, an 
+AI ecommerce platform provides the infrastructure needed to launch quickly. Automated design systems 
+combined with content generation make it possible to create a fully functional website in minutes.
+</p>
+
+<p>
+As the creator economy continues to expand, tools that combine automation, analytics and digital 
+commerce capabilities are becoming essential. AI builders help entrepreneurs validate concepts, 
+build audiences and scale ventures faster than traditional website development workflows.
+</p>
+
+</div>
+
+</div>
+</section>
+
+
+<section class="section">
+<div class="container">
+
+<div class="prose mx-auto reveal" style="max-width:900px;text-align:center;">
+
+<h2>Why AI Ecommerce Platforms Are Growing Fast</h2>
+
+<p>
+Artificial intelligence is rapidly changing the ecommerce landscape. Instead of manually designing 
+websites or writing long product descriptions, AI tools now automate many tasks involved in launching 
+a digital storefront. Entrepreneurs can simply describe their product concept and the system generates 
+a structured website layout with product sections, marketing copy and visual elements.
+</p>
+
+<p>
+Platforms built around automation reduce the time required to start a venture. This is especially 
+valuable for creators who want to test ideas quickly without investing heavily in development. 
+AI tools generate design assets, assist with content creation and provide analytics dashboards 
+that help users understand how their website performs.
+</p>
+
+<p>
+Because of these advantages, AI ecommerce builders are becoming a key part of the digital 
+entrepreneurship ecosystem. From digital downloads and educational products to services and 
+creative assets, creators can now launch scalable ventures using automated tools that previously 
+required professional developers.
+</p>
+
+</div>
+
+</div>
+</section>
+
+
+<section class="section" id="faq">
+
+<div class="container">
+
+<div class="text-center reveal">
+<div class="section-label">FAQ</div>
+<h2>Common Questions</h2>
+</div>
+
+<div class="card-grid cols-2 stagger" style="max-width:800px;margin:40px auto 0;">
+
+<div class="feature-card">
+<h3>How does the AI builder work?</h3>
+<p>
+You describe your product concept and the platform generates a complete ecommerce website 
+including layout, branding and content.
+</p>
+</div>
+
+<div class="feature-card">
+<h3>Can I change plans anytime?</h3>
+<p>
+Yes. Plans can be upgraded or downgraded whenever needed.
+</p>
+</div>
+
+<div class="feature-card">
+<h3>Is there a campus discount?</h3>
+<p>
+Pricing is designed to be accessible for creators launching digital ventures.
+</p>
+</div>
+
+<div class="feature-card">
+<h3>What payment methods do you accept?</h3>
+<p>
+Major credit cards, Apple Pay and Google Pay are supported.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<footer class="site-footer">
+<div class="container">
+
+<div class="footer-grid">
+
+<div class="footer-brand">
+<div class="fb-name"><span class="logo-mark">CL</span> CampusLaunch</div>
+<p>AI platform helping creators launch digital ventures faster.</p>
+</div>
+
+<div class="footer-col">
+<ul>
+<li><a href="/features">Features</a></li>
+<li><a href="/how-it-works">How It Works</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><a href="/pricing">Pricing</a></li>
+</ul>
+</div>
+
+<div class="footer-col">
+<ul>
+<li><a href="/">About Us</a></li>
+<li><a href="/contact">Join CampusLaunch</a></li>
+<li><a href="/pricing#faq">FAQ</a></li>
+</ul>
+</div>
+
+</div>
+
+<div class="footer-bottom">
+<span>2026 CampusLaunch. All rights reserved.</span>
+</div>
+
+</div>
+</footer>
+
+<script defer src="js/main.js"></script>
+
 </body>
 </html>
