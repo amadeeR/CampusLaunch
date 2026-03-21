@@ -197,3 +197,137 @@ if (heroVisual) {
     }
   }, { passive: true });
 }
+
+
+/* ═══════════════════════════════════════════════════════════════
+   ENHANCED ANALYTICS — scroll depth, time on page, links, form
+   ═══════════════════════════════════════════════════════════════ */
+
+// Helper: get clean page name for event labels
+function getPageName() {
+  const path = window.location.pathname.replace(/\//g, '').replace('.html', '');
+  const map = {
+    '': 'Home',
+    'index': 'Home',
+    'features': 'Features',
+    'pricing': 'Pricing',
+    'contact': 'Contact',
+    'how-it-works': 'HowItWorks'
+  };
+  return map[path] || path || 'Home';
+}
+
+// ── Scroll Depth Tracking (25%, 50%, 75%, 100%) ─────────────
+(function trackScrollDepth() {
+  const thresholds = [25, 50, 75, 100];
+  const fired = {};
+  const pageName = getPageName();
+
+  window.addEventListener('scroll', function () {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    if (docHeight <= 0) return;
+    const pct = Math.round((scrollTop / docHeight) * 100);
+
+    thresholds.forEach(function (t) {
+      if (pct >= t && !fired[t]) {
+        fired[t] = true;
+        gtag('event', 'scroll_depth', {
+          'event_category': 'Engagement',
+          'event_label': pageName + ' Scroll ' + t + '%',
+          'value': t
+        });
+      }
+    });
+  }, { passive: true });
+})();
+
+
+// ── Time on Page Tracking (10s, 30s, 60s, 180s) ────────────
+(function trackTimeOnPage() {
+  var milestones = [10, 30, 60, 180];
+  var pageName = getPageName();
+  var startTime = Date.now();
+
+  milestones.forEach(function (seconds) {
+    setTimeout(function () {
+      // only fire if the tab is still visible
+      if (!document.hidden) {
+        gtag('event', 'time_on_page', {
+          'event_category': 'Engagement',
+          'event_label': pageName + ' ' + seconds + 's',
+          'value': seconds
+        });
+      }
+    }, seconds * 1000);
+  });
+})();
+
+
+// ── Outbound Link Click Tracking ────────────────────────────
+document.addEventListener('click', function (e) {
+  var link = e.target.closest('a[href]');
+  if (!link) return;
+  var href = link.getAttribute('href');
+  if (href && href.startsWith('http') && !href.includes(window.location.hostname)) {
+    gtag('event', 'outbound_click', {
+      'event_category': 'Outbound',
+      'event_label': href,
+      'transport_type': 'beacon'
+    });
+  }
+});
+
+
+// ── Footer Link Click Tracking ──────────────────────────────
+document.querySelectorAll('.site-footer a').forEach(function (link) {
+  link.addEventListener('click', function () {
+    gtag('event', 'footer_click', {
+      'event_category': 'Navigation',
+      'event_label': 'Footer - ' + (link.textContent.trim() || link.getAttribute('href'))
+    });
+  });
+});
+
+
+// ── Section Visibility Tracking ─────────────────────────────
+// Fires once per section when it enters the viewport
+(function trackSectionViews() {
+  var sections = document.querySelectorAll('section[id], section[class*="hero"]');
+  if (!sections.length) return;
+  var pageName = getPageName();
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        var sectionId = entry.target.id || entry.target.className.split(' ')[0];
+        gtag('event', 'section_view', {
+          'event_category': 'Engagement',
+          'event_label': pageName + ' - ' + sectionId
+        });
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  sections.forEach(function (s) { observer.observe(s); });
+})();
+
+
+// ── Google Form Visibility Tracking (Contact page) ──────────
+(function trackFormView() {
+  var formIframe = document.querySelector('iframe[src*="forms.gle"], iframe[src*="docs.google.com/forms"]');
+  if (!formIframe) return;
+
+  var observer = new IntersectionObserver(function (entries) {
+    if (entries[0].isIntersecting) {
+      gtag('event', 'form_view', {
+        'event_category': 'Lead',
+        'event_label': 'Google Form Visible'
+      });
+      observer.disconnect();
+    }
+  }, { threshold: 0.5 });
+
+  observer.observe(formIframe);
+})();
